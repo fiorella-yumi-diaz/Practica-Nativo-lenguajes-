@@ -55,3 +55,29 @@ const datos = {
     apellido : apellido,
 }
 console.log(datos);
+
+
+// MAANIPILACION DEL DOM
+
+const title = document.createElement('h1');
+title.innerText = "prueba del iner text";
+
+const booton = document.createElement('button');
+booton.innerText = "click"
+booton.addEventListener('click', function (params) {
+    title.innerText = 'texto actualizado';
+})
+
+document.body.append(title)
+document.body.append(booton)
+
+// OBJETOS PARA PARAMETROS
+const juego = {
+    mecanico : "Carrusel",
+    Hobbie : "el lobo",
+}
+function imprimir(juego) {
+    return "<p>juega con..." + juego.Hobbie + "</p>"
+}
+console.log(imprimir);
+document.body.innerHTML = imprimir(juego)
