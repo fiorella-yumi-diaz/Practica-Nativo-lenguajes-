@@ -26,3 +26,32 @@ function data (names = "diana", apellido = "mayta") {
 }
 const foo = data ("fiorella", "diaz")
 console.log(foo);
+
+
+
+
+//OBJETOS 
+const comida = {
+    //properties === propiedades
+    entrada: "gelatina",
+    bebida: "tamarindo",
+    menu : ["pollo horneado","fideos","pizza"],
+    // methods === metodos 
+    saludo () {
+        return "hola"
+    }
+}
+console.log(comida.entrada);
+console.log(comida.menu);
+console.log(comida.saludo());
+
+
+
+const name = "Fiorella";
+const apellido = "Diaz"
+
+const datos = {
+    name : name,
+    apellido : apellido,
+}
+console.log(datos);
