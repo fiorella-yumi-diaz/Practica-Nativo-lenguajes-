@@ -127,3 +127,38 @@ console.log(funcionFlecha());
 // existe un problema con los obejetos
 const jota = () => ({hola: "hello", como: "como"})
 console.log(jota());
+
+// practicando funciones de suma, un boton que devuelva una suma
+
+const suma = (x, y) => {
+    return x + y;
+}
+
+const valor1 = document.createElement("input");
+const valor2 = document.createElement("input");
+const enviar = document.createElement("button");
+const resultado = document.createElement("p"); // Elemento para mostrar el resultado
+
+enviar.innerText = "Click Me";
+valor1.id = "input1";
+valor2.id = "input2";
+
+document.body.append(valor1);
+document.body.append(valor2);
+document.body.append(enviar);
+document.body.append(resultado); // Agregar el elemento para mostrar el resultado
+
+enviar.addEventListener('click', ()=> {
+    const input1 = document.getElementById("input1");
+    const input2 = document.getElementById("input2");
+
+    const valorInput1 = parseFloat(input1.value);
+    const valorInput2 = parseFloat(input2.value);
+
+    if (!isNaN(valorInput1) && !isNaN(valorInput2)) {
+        const valor = suma(valorInput1, valorInput2);
+        resultado.innerText = `El resultado es: ${valor}`;
+    } else {
+        resultado.innerText = 'Ingresa números válidos en ambos campos.';
+    }
+});
