@@ -81,3 +81,49 @@ function imprimir(juego) {
 }
 console.log(imprimir);
 document.body.innerHTML = imprimir(juego)
+
+// DESTRUCTURING
+const animales = {
+    conejo : "Conejo",
+    gato : "Gato",
+}
+function mascotas({conejo}) {
+    
+    return "<h3>La mascota es un " + conejo + "</h3>"
+}
+document.body.innerHTML = mascotas(animales)
+
+function names(animales) {
+const {conejo, gato} = animales
+return conejo + gato;
+}
+
+console.log(names(animales));
+
+//FUNCIONES ANONIMAS
+console.log(function () {
+    return "starting..."
+}());
+ 
+const boton = document.createElement("button");
+boton.innerText = "Click Me";
+
+boton.addEventListener("click", () => {
+    alert("click me")
+})
+document.body.append(boton)
+
+//FUNCIONES FLECHAS 
+function normal (x, y) {
+    return x + y
+}
+
+const arrowFuction = (x,y) => {
+    return x + y
+}
+const funcionFlecha = () => "HOLA MUNDO";
+console.log(funcionFlecha());
+
+// existe un problema con los obejetos
+const jota = () => ({hola: "hello", como: "como"})
+console.log(jota());
