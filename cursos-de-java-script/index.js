@@ -155,10 +155,44 @@ enviar.addEventListener('click', ()=> {
     const valorInput1 = parseFloat(input1.value);
     const valorInput2 = parseFloat(input2.value);
 
-    if (!isNaN(valorInput1) && !isNaN(valorInput2)) {
-        const valor = suma(valorInput1, valorInput2);
-        resultado.innerText = `El resultado es: ${valor}`;
-    } else {
-        resultado.innerText = 'Ingresa números válidos en ambos campos.';
-    }
 });
+
+// crea un campo que devuelva un valor y ese valor se compare y regrese al color de una caja
+
+// Elementos dom
+const box = document.createElement("div")
+const capoText = document.createElement("input")
+const botonColor = document.createElement("button")
+
+botonColor.innerText = "cambia color"
+capoText.id = "colo2"
+
+
+document.body.append(box)
+box.append(capoText)
+box.append(botonColor)
+box.style = "width: 200px"
+box.style = "height: 200px"
+//funcion de prueba de color
+function color(string) {
+    if (string === "red"){
+        return "red"
+    } else if (string === "blue"){
+        return "blue"
+    } else if ( string === "pink") {
+        return "pink"
+    } else {
+        return "no existe este color"
+    }
+}
+
+// funcion que proceso datos del input
+
+botonColor.addEventListener("click", () => {
+    const colo= document.getElementById("colo2");
+    const valorDelInput = colo.value;
+    const va = color(valorDelInput)
+
+    box.style = `background: ${va}`
+})
+
