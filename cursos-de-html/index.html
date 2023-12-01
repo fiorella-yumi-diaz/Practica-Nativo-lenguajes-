@@ -56,6 +56,62 @@
             <img style="width: 100px;" src="./img/conejo-5.jpg" alt="foto de gatitos">
            </figure>
         </section>
+        <section>
+            <h4>videos</h4>
+            <video  controls preload="auto">
+                <source src="./video/ter.mp4 "/>
+                <source src="./video/ter.m4v "/>
+            </video>
+        </section>
+        <section>
+            <form action="">
+                <label for="nombre">
+                    <span>Cual es tu Nombre</span>
+                    <input type="text" id="nombre" >
+                </label>
+            </form>
+        </section>
+        <section>
+            <fieldset>
+                <legend>Calendario</legend>
+                <form action="">
+                    <label for="time">
+                        <span>Hora</span>
+                        <input type="time" name="time" id="time">
+                    </label>
+                    <label for="dia">
+                        <span>Dia</span>
+                        <input type="date" name="dia" id="dia">
+                    </label>
+                    <label for="semana">
+                        <span>Semana</span>
+                        <input type="week" name="semana" id="semana">
+                    </label>
+                    <label for="mes">
+                        <span>Mes</span>
+                        <input type="month" name="mes" id="mes" required>
+                    </label>
+                    <input type="submit">
+                </form>
+            </fieldset>
+        </section>
+        <section>
+            <select name="Hobiies" id="">
+                <option value="Music">Music</option>
+                <option value="Canto">Canto</option>
+                <option value="Ballet">Ballet</option>
+            </select>
+            <label>
+                Choose a browser from this list: <input list="browsers" /></label>
+            <datalist id="browsers">
+                <option value="Chrome"></option>
+                <option value="Firefox"></option>
+                <option value="Internet Explorer"></option>
+                <option value="Opera"></option>
+                <option value="Safari"></option>
+                <option value="Microsoft Edge"></option>
+              </datalist>
+        </section>
 
     </main>
     <footer>!Gracias, con mucho amor¡</footer>
