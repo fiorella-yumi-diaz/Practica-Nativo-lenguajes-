@@ -196,3 +196,10 @@ botonColor.addEventListener("click", () => {
     box.style = `background: ${va}`
 })
 
+// crea boton que trasforme un texto en otro
+const botonText = document.createElement("button");
+const parrafoaqui = document.createElement("p")
+botonText.innerText = "textos"
+botonText.addEventListener("click", () => {
+    parrafoaqui.textContent= "hola mundo"
+})
