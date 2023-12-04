@@ -63,11 +63,33 @@ p:not(.top){
     transform: translate(50px,0px);
 }
 
-.elmentoRedondo {
+.elmentoRedondo1 {
     width: 70px;
     margin: 10px;
     height: 70px;
     background-color: #c9fec2;
     border-radius: 50%;
 }
-/**/
+.elmentoRedondo1:hover{
+    /* transform: scale(0.8, 0.2); */
+    transform: scale(0.8);
+}
+.elmentoRedondo2 {
+    width: 70px;
+    margin: 10px;
+    height: 70px;
+    background-color: #c9fec2;
+    border-radius: 10px;
+}
+.elmentoRedondo2:hover{
+    transform: skewx(20deg);
+}
+.elmentoRedondo3 {
+    width: 70px;
+    margin: 10px;
+    height: 70px;
+    background-color: #c9fec2;
+}
+.elmentoRedondo3:hover{
+    transform: rotate(50deg);
+}
