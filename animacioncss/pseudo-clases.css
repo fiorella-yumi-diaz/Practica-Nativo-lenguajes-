@@ -1,0 +1,73 @@
+body{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+h1 {
+    color: #34656c;
+}
+
+.contenido{
+    width: 90%;
+    height: 500px;
+    background-color: #34656c;
+    display: flex;
+    flex-flow: column;
+    padding: 20px;
+}
+/*Pseudo clases:____________________________________*/
+/* elemento que no ah sido visitado*/
+a:link {
+    color: rgb(22, 223, 22)
+}
+/* elemento que ah sido visitado*/
+a:visited{
+    color: pink;
+}
+/* elemento que cambia al pasar mause*/
+a:hover{
+    background-color: #0f8e8ead 
+}
+/* todas las clases p menos la que tenga la clase usaran el efecto*/
+p:not(.top){
+    color: red;
+}
+/*de la clase el div hijito asignado cambia*/
+.favorito div:nth-child(even) {
+    color: rgb(94, 142, 23);
+}
+/*Pseudo lementos:____________________________________*/
+/*El antes*/
+.save::before{
+    content: "luo binghe ";
+}
+/*el despues*/
+.save::after{
+    content: " Shen qigqiu";
+}
+.shadow {
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    border-radius: 50%;
+}
+
+.circle {
+    width: 200px;
+    height: 200px;
+    background-color:red;
+    border-radius: 50%;
+}
+/*translate(X,y,)*/
+.circle:hover{
+    transform: translate(50px,0px);
+}
+
+.elmentoRedondo {
+    width: 70px;
+    margin: 10px;
+    height: 70px;
+    background-color: #c9fec2;
+    border-radius: 50%;
+}
+/**/
